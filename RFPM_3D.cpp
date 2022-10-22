@@ -71,7 +71,7 @@ StochasticLib1 sto(seed);
     
 
 	double Emin=0.0;
-        int ini_con= 100; //number of initial conditions
+        int ini_con= 10000; //number of initial conditions
 	for(int n=1; n<=ini_con; n++){  //loop for different initial condition
 
 	for(i=0;i<num_sites;i++){
@@ -118,7 +118,7 @@ StochasticLib1 sto(seed);
  		for(j=0;j<dim;j++)
 		tot_ej-=(S[i]==S[nn[i][j]]);
 
-	double mean_ej=tot_ej/(1.0*num_sites); //bond energy per site
+	double mean_ej=tot_ej/num_sites; //bond energy per site
 
 	cout<<ini_con<<"  "<<setprecision(15)<<Mag<<"    "<<mean_ej<<"    "<<Emin<<"\n";
 
