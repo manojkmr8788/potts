@@ -10,7 +10,7 @@ gnuplot -persist << EOF
 f(x,y)=value(sprintf("a%d",y))*x**-b*(1+value(sprintf("c%d",y))*x**-d)+value(sprintf("e%d",y)) 
 fit f(x,y) 'inputFile.dat' u 1:-1:2:3 via a0,a1,b,c0,c1,d,e0,e1
 
-set print "outputFile.dat" append    								                                         ##create an output file
+set print "outputFile.dat" append    								                         ##create an output file
 print b,b_err/FIT_STDFIT,d,d_err/FIT_STDFIT,e0,e0_err/FIT_STDFIT,e1,e1_err/FIT_STDFIT,FIT_P   ##store the power-law exponents and extrapolated results alongwith fit quality FIT_P in the output file 
 
 EOF
