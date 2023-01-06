@@ -13,7 +13,7 @@
   IMPORTANT:
   To use this code, you need to download the gco-v3.0 package by Olga Veksler 
   and Andrew Delong for optimizing the multi-label energies. The package is 
-  available at Olga Veksler webpage http://www.csd.uwo.ca/faculty/olga/software.html.
+  available at Olga Veksler webpage https://www.csd.uwo.ca/~oveksler/.
   The package also provides libraries by Y. Boykov and V. Kolmogorov, namely 
   maxflow.cpp, graph.cpp, graph.h, block.h, and energy.h.
   
