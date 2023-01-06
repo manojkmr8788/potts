@@ -20,7 +20,6 @@
   Usage:
   Unpack the package gco-v3.0 and compile the code using makefile. However note 
   that inside the GCoptimization.h file you can customize the following typedefs:
-
   
   typedef  <numeric type>  EnergyType;      // total energy value;      
   typedef  <numeric type>  EnergyTermType;  // individual energy term;
