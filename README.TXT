@@ -21,12 +21,11 @@
   Unpack the package gco-v3.0 and compile the code using makefile. However note 
   that inside the GCoptimization.h file you can customize the following typedefs:
 
-  typedef  <numeric type>  SiteID;          // index of a site (pixel); default is int32
-  typedef  <numeric type>  LabelID;         // index of a label;        default is int32
-  typedef  <numeric type>  EnergyType;      // total energy value;      default is int64
+  
+  typedef  <numeric type>  EnergyType;      // total energy value;      
   typedef  <numeric type>  EnergyTermType;  // individual energy term;
   
-  By default, all these are of integer types. In our code, however the RFPM energy function
+  By default, these are of integer types. In our code, however the RFPM energy function
   is of double type. Therefore, one needs to change these accordingly in order to successfully
   compile and use our code. The code is designed to minimize the energy for a three-state RFPM 
   on a cubic lattice of linear size L = 16 with periodic boundary conditions in all directions. 
