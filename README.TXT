@@ -18,10 +18,19 @@
   maxflow.cpp, graph.cpp, graph.h, block.h, and energy.h.
   
   Usage:
-  Unpack the package gco-v3.0 and compile the code using makefile. The code will
-  minimize the energy for a three-state RFPM on a cubic lattice of linear size 
-  L = 16 with periodic boundary conditions in all directions. The random field 
-  variables are drawn from a Gaussian distribution of standard deviation 1.8. 
+  Unpack the package gco-v3.0 and compile the code using makefile. However note 
+  that inside the GCoptimization.h file you can customize the following typedefs:
+
+  typedef  <numeric type>  SiteID;          // index of a site (pixel); default is int32
+  typedef  <numeric type>  LabelID;         // index of a label;        default is int32
+  typedef  <numeric type>  EnergyType;      // total energy value;      default is int64
+  typedef  <numeric type>  EnergyTermType;  // individual energy term;
+  
+  By default, all these are of integer types. In our code, however the RFPM energy function
+  is of double type. Therefore, one needs to change these accordingly in order to successfully
+  compile and use our code. The code is designed to minimize the energy for a three-state RFPM 
+  on a cubic lattice of linear size L = 16 with periodic boundary conditions in all directions. 
+  The random field variables are drawn from a Gaussian distribution of standard deviation 1.8. 
   For a given sample of this strength, the code will optimize the RFPM energy   
   function for 10000 initial spin labelings and output the magnetization and  
   bond-energy per spin from the minimum energy configuration among 10000
@@ -40,4 +49,4 @@
       M. Kumar and M. Weigel, arXiv:2204.11745. 
       
   [4] Critical behavior of the three-state random-field Potts model in three dimensions.     
-      M. Kumar et al., arXiv:2205.13047, To appear in Physical Review Research.
+      M. Kumar et al., arXiv:2205.13047, Physical Review Research 4, L042041 (2022).
