@@ -18,33 +18,28 @@
   maxflow.cpp, graph.cpp, graph.h, block.h, and energy.h.
   
   Usage:
-  Unpack the package gco-v3.0 and compile the code using makefile. However note 
-  that inside the GCoptimization.h file you can customize the following typedefs:
-  
-  typedef  <numeric type>  EnergyType;      // total energy value;      
-  typedef  <numeric type>  EnergyTermType;  // individual energy term;
-  
-  By default, these are of integer types. In our code, however the RFPM energy function
-  is of double type. Therefore, one needs to change these accordingly in order to successfully
-  compile and use our code. The code is designed to minimize the energy for a three-state RFPM 
-  on a cubic lattice of linear size L = 16 with periodic boundary conditions in all directions. 
-  The random field variables are drawn from a Gaussian distribution of standard deviation 1.8. 
-  For a given sample of this strength, the code will optimize the RFPM energy   
-  function for 10000 initial spin labelings and output the magnetization and  
-  bond-energy per spin from the minimum energy configuration among 10000
-  runs as well as the total optimize value of the minimum energy function.
+
+  Unpack the package gco-v3.0 and compile the code using the makefile.  The code is
+  designed to minimize the energy for a three-state RFPM on a cubic lattice of linear
+  size L = 16 with periodic boundary conditions in all directions.  The random field
+  variables are drawn from a Gaussian distribution of standard deviation 1.8.  For a
+  given sample of this strength, the code will optimize the RFPM energy function for
+  10000 initial spin labelings and output the magnetization and bond-energy per spin
+  from the minimum energy configuration among 10000 runs as well as the total
+  optimize value of the minimum energy function. For the example configuration the
+  code should finish a few minutes.
   
   Please see our publications as given below for details on RFPM energy function, 
   approximate ground states via graph cuts, its performance, and the role of RFs. 
   
   [1] Approximate ground states of the random-field Potts model from graph cuts.
-      M. Kumar et al., Physical Review E 97, 053307 (2018).
+      M. Kumar et al., Phys. Rev. E 97, 053307 (2018).
       
   [2] On the comparison of optimization algorithm for the random-field Potts model.
-      M. Kumar and M. Weigel, Journal of Physics: Conference Series 2241 , 012003 (2022).
+      M. Kumar and M. Weigel, J. Phys.: Conf. Series 2241 , 012003 (2022).
       
   [3] Quasi-exact ground-state algorithm for the random-field Potts model.
-      M. Kumar and M. Weigel, arXiv:2204.11745. 
+      M. Kumar and M. Weigel, Preprint arXiv:2204.11745. 
       
   [4] Critical behavior of the three-state random-field Potts model in three dimensions.     
-      M. Kumar et al., arXiv:2205.13047, Physical Review Research 4, L042041 (2022).
+      M. Kumar et al., Phys. Rev. Res. 4, L042041 (2022).

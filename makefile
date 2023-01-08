@@ -1,5 +1,5 @@
 CC = g++
-CFLAGS = -w
+CFLAGS = -w -DGCO_ENERGYTYPE=double
 OPFLAGS = -O3 -march=native
 LDFLAGS = -lm -fpermissive
 OUTPUT = rfpm.out
