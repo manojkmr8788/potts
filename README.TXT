@@ -35,7 +35,7 @@
   [1] Approximate ground states of the random-field Potts model from graph cuts.
       M. Kumar et al., Phys. Rev. E 97, 053307 (2018).
       
-  [2] On the comparison of optimization algorithm for the random-field Potts model.
+  [2] On the comparison of optimization algorithms for the random-field Potts model.
       M. Kumar and M. Weigel, J. Phys.: Conf. Series 2241 , 012003 (2022).
       
   [3] Quasi-exact ground-state algorithm for the random-field Potts model.
